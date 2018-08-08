@@ -70,14 +70,14 @@ b.pack(pady=5)
 b.configure(background="#A8BBD9")
 
 
-# def stopit():
-#     pygame.mixer.pause()
+def stopit():
+    pygame.mixer.pause()
 #
 # def playit():
 #     pygame.mixer.unpause()
 #
-# stopping = Button(root,text ="Stop Sound", command = stopit)
-# stopping.grid(row = 6, column =5)
+stopping = Button(root,text ="Stop Sound", command = stopit)
+stopping.grid(row = 6, column =5)
 #
 # unstop = Button(root, text = 'Resume Sounds', command = playit)
 # unstop.grid(row = 2, column = 4)
