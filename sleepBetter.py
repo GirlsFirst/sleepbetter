@@ -25,13 +25,11 @@ def save():
     min = open("test.txt", "w")
     min.write(input.get())
     min.close()
-    # top.destroy()
 
 def anothersave():
     min = open("text2.txt", "w")
     min.write(newinput.get())
     min.close()
-    # newtop.withdraw()
 
 def timer():
     milli= open("test.txt","r")
