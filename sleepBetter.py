@@ -21,20 +21,20 @@ newtop =Toplevel()
 newinput = Entry(newtop)
 
 def save():
-    min = open("test.txt", "w")
+    min = open("text.txt", "w")
     min.write(input.get())
     min.close()
     top.destroy()
 
 def anothersave():
-    min = open("test.txt", "w")
+    min = open("text.txt", "w")
     min.write(newinput.get())
     min.close()
     newtop.destroy()
 
 
 def timer():
-    milli= open("test.txt","r")
+    milli= open("text.txt","r")
     long=milli.read()
     milliseconds=int(long)*60*1000
     return milliseconds
@@ -80,9 +80,7 @@ def rainStart():
     pygame.mixer.init()
     sounda= pygame.mixer.Sound("rain-03.wav")
     milliseconds=timer()
-    if milliseconds != 0:
-        sounda.play(-1,milliseconds)
-    sounda.play(-1,newmilliseconds)
+    sounda.play(-1,milliseconds)
     print("Timer Initiated")
 
 def paperStart():
@@ -91,9 +89,7 @@ def paperStart():
     pygame.mixer.init()
     soundb= pygame.mixer.Sound("paper-rustle-5.wav")
     milliseconds=timer()
-    if milliseconds != 0:
-        soundb.play(-1,milliseconds)
-    soundb.play(-1,newmilliseconds)    
+    soundb.play(-1,milliseconds)    
     print("Timer Initiated")
 
 def planeStart():
@@ -102,9 +98,7 @@ def planeStart():
     pygame.mixer.init()
     soundc= pygame.mixer.Sound("airplane-interior-1.wav")
     milliseconds=timer()
-    if milliseconds != 0:
-        soundc.play(-1,milliseconds)
-    soundc.play(-1,newmilliseconds)    
+    soundc.play(-1,milliseconds)    
     print("Timer Initiated")
 
 def fanStart():
@@ -113,9 +107,7 @@ def fanStart():
     pygame.mixer.init()
     soundd= pygame.mixer.Sound("18-Fan-10min.wav")
     milliseconds=timer()
-    if milliseconds != 0:
-        soundd.play(-1,milliseconds)
-    soundd.play(-1,newmilliseconds)    
+    soundd.play(-1,milliseconds)    
     print("Timer Initiated")
     
 def clockStart():
@@ -124,9 +116,7 @@ def clockStart():
     pygame.mixer.init()
     sounde= pygame.mixer.Sound("clock-ticking-2.wav")
     milliseconds=timer()
-    if milliseconds != 0:
-        sounde.play(-1,milliseconds)
-    sounde.play(-1,newmilliseconds)    
+    sounde.play(-1,milliseconds)    
     print("Timer Initiated")
 
 def trainStart():
@@ -135,9 +125,7 @@ def trainStart():
     pygame.mixer.init()
     soundf= pygame.mixer.Sound("train-pass-by-02.wav")
     milliseconds=timer()
-    if milliseconds != 0:
-        soundf.play(-1,milliseconds)
-    soundf.play(-1,newmilliseconds)    
+    soundf.play(-1,milliseconds)    
     print("Timer Initiated")
     
 def carStart():
@@ -146,9 +134,7 @@ def carStart():
     pygame.mixer.init()
     soundg= pygame.mixer.Sound("car-passing-1.wav")
     milliseconds=timer()
-    if milliseconds != 0:
-        soundg.play(-1,milliseconds)
-    soundg.play(-1,newmilliseconds)    
+    soundg.play(-1,milliseconds)    
     print("Timer Initiated")
 
 def dropStart():
@@ -157,9 +143,7 @@ def dropStart():
     pygame.mixer.init()
     soundh= pygame.mixer.Sound("water-dripping-1.wav")
     milliseconds=timer()
-    if milliseconds != 0:
-        soundh.play(-1,milliseconds)
-    soundh.play(-1,newmilliseconds)    
+    soundh.play(-1,milliseconds)    
     print("Timer Initiated")
 
 def oceanStart():
@@ -168,9 +152,7 @@ def oceanStart():
     pygame.mixer.init()
     soundi= pygame.mixer.Sound("ocean-wave-2.wav")
     milliseconds=timer()
-    if milliseconds != 0:
-        soundi.play(-1,milliseconds)
-    soundi.play(-1,newmilliseconds)    
+    soundi.play(-1,milliseconds)    
     print("Timer Initiated")
 
 def windStart():
@@ -179,9 +161,7 @@ def windStart():
     pygame.mixer.init()
     soundj= pygame.mixer.Sound("wind-1.wav")
     milliseconds=timer()
-   if milliseconds != 0:
-        soundj.play(-1,milliseconds)
-    soundj.play(-1,newmilliseconds)    
+    soundj.play(-1,milliseconds)    
     print("Timer Initiated")
 
 def riverStart():
@@ -190,9 +170,7 @@ def riverStart():
     pygame.mixer.init()
     soundk= pygame.mixer.Sound("river.wav")
     milliseconds=timer()
-   if milliseconds != 0:
-        soundk.play(-1,milliseconds)
-    soundk.play(-1,newmilliseconds)    
+    soundk.play(-1,milliseconds)    
     print("Timer Initiated")
 
 fillFrame = Frame(root, width = 50, height = 50, bd= 1)
