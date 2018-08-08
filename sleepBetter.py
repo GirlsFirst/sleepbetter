@@ -40,15 +40,18 @@ def timer():
     return milliseconds
 
 def newtimer():
-    newtop = Toplevel()
-    newinput = Entry(newtop)
-    newtop.attributes("-topmost", "true")
-    newtop.title('Timer')
-    newlabel=Label(newtop, text = "How many minutes do you want?")
-    newlabel.pack()
-    newinput.pack(padx=5)
-    newsave = Button(newtop, text = "Save", command = anothersave)
-    newsave.pack()
+   newtop = Toplevel()
+   newinput = Entry(newtop)
+   newtop.configure(background="#A8BBD9")
+   newtop.attributes("-topmost", "true")
+   newtop.title('Timer')
+   newlabel=Label(newtop, text = "How many minutes do you want?")
+   newlabel.configure(background="#A8BBD9")
+   newlabel.pack()
+   newinput.pack(padx=5)
+   newsave = Button(newtop, text = "Save", command = anothersave)
+   newsave.configure(background="#A8BBD9")
+   newsave.pack()
     
 
 
